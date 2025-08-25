@@ -2,6 +2,7 @@ import Header from './components/Header'
 import {useState,useEffect} from 'react'
 import Resultado from './components/Resultado'
 import "./css/estilo.css"
+import "./css/estilo.css"
 
 
 function App() {
@@ -21,9 +22,7 @@ const calcularImc=()=>{
   //HOOK useEffect - efeito colateral no mostrar resultado
   useEffect(()=>{
     resultado >0 ? setMostrarResultado(true): setMostrarResultado(false)
-  },
-)
-
+  },[resultado])
 
   return (
     <div className="container">
