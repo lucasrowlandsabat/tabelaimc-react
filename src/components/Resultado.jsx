@@ -10,7 +10,7 @@ function Resultado({resultado}){
         <div>
             <div className="resultado">
                 <h2>
-                    Seu IMC é de: <span calssName='imcSpan'>{resultado}</span>
+                    Seu IMC é de: <span className='imcSpan'>{resultado}</span>
                 </h2>
             </div>
             <table className='tabela'>

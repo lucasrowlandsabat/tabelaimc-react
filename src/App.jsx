@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react'
 import Resultado from './components/Resultado'
 import "./css/estilo.css"
 import "./css/estilo.css"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -48,7 +49,7 @@ const calcularImc=()=>{
       {mostrarResultado && (
         <Resultado resultado={resultado}/>
       )}
-    
+    <Footer/>
     </div>
   )
 }
